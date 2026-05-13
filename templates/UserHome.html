@@ -1,0 +1,155 @@
+
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cloud Storage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Farming Company Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="static/assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="static/assets/css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="static/assets/css/font-awesome.css" rel="stylesheet">
+<!-- //font-awesome icons -->
+<!-- font -->
+<link href="//fonts.googleapis.com/css?family=Righteous&subset=latin-ext" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!-- //font -->
+<script src="static/assets/js/jquery-1.11.1.min.js"></script>
+<script src="static/assets/js/bootstrap.js"></script>
+<script src="static/assets/js/SmoothScroll.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+</head>
+<body>
+
+
+	<!-- header -->
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="w3layouts-logo">
+						<h1><a href="index.html">Cloud <span>Storage</span></a></h1>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav>
+						<ul class="nav navbar-nav">
+							   {% include 'menu/user.html' %}
+
+						</ul>
+					</nav>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- banner -->
+	<div class="banner about-banner">
+		<div class="container">
+			<h2>User Personal Details</h2>
+			<div class="agileits-line"> </div>
+		</div>
+	</div>
+    <br>
+    <br>
+
+  <!--./ EVENT SECTION END -->
+    <section id="contact">
+        <div class="container">
+
+
+            <div style="margin-bottom:12%;">
+    <table width="100%" border="1" align="center" class="contactct-fm map-content-9">
+              <tr style="color:white;">
+
+
+                <td bgcolor="#aebe27"><div align="center" class="contacts12-main"><strong>Name</strong></div></td>
+                 <td bgcolor="#aebe27"><div align="center" class="contacts12-main"><strong>Mobile</strong></div></td>
+                <td bgcolor="#aebe27"><div align="center" class="contacts12-main"><strong>EmailId</strong></div></td>
+                  <td bgcolor="#aebe27"><div align="center" class="contacts12-main"><strong>Adress</strong></div></td>
+                   <td bgcolor="#aebe27"><div align="center" class="contacts12-main"><strong>UserName</strong></div></td>
+
+              </tr>
+			  {% for item in data %}
+              <tr>
+
+                <td><div align="center">{{item[1]}}</div></td>
+                <td><div align="center">{{item[2]}}</div></td>
+                <td><div align="center">{{item[3]}}</div></td>
+                <td><div align="center">{{item[4]}}</div></td>
+                <td><div align="center">{{item[6]}}</div></td>
+
+              </tr>
+			  {% endfor %}
+
+            </table>
+
+</div>
+
+        </div>
+    </section>
+    <!--./ Contact End -->
+
+
+
+
+
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+
+			<div class="w3agile_footer_copy">
+				<p>&copy; 2025 Cloud Storage  . All rights reserved | Design by <a href="#">Cloud Storage</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+	<script type="text/javascript" src="static/assets/js/move-top.js"></script>
+	<script type="text/javascript" src="static/assets/js/easing.js"></script>
+
+
+  <!-- Flash Notification -->
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <script>
+                var messages = {{ messages | safe }};
+                for (var i=0; i<messages.length; i++) {
+                alert(messages[i]);
+                }
+             </script>
+            {% endif %}
+            {% endwith %}
+     <!-- Flash Notification -->
+</body>
+</html>

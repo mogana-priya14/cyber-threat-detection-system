@@ -1,0 +1,193 @@
+
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cloud Storage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Farming Company Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="static/assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="static/assets/css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="static/assets/css/font-awesome.css" rel="stylesheet">
+<!-- //font-awesome icons -->
+<!-- font -->
+<link href="//fonts.googleapis.com/css?family=Righteous&subset=latin-ext" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!-- //font -->
+<script src="static/assets/js/jquery-1.11.1.min.js"></script>
+<script src="static/assets/js/bootstrap.js"></script>
+<script src="static/assets/js/SmoothScroll.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+</head>
+<body>
+<style>
+	.card {
+    background: #fff;
+    border-radius: 15px;
+    border: none;
+}
+
+input.form-control {
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.btn-success {
+    background-color: #aebe27;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.w-45 {
+    width: 48%;
+}
+
+</style>
+
+	<!-- header -->
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="w3layouts-logo">
+						<h1><a href="index.html">Cloud <span>Storage</span></a></h1>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav>
+						<ul class="nav navbar-nav">
+							   {% include 'menu/home.html' %}
+
+						</ul>
+					</nav>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- banner -->
+	<div class="banner about-banner">
+		<div class="container">
+			<h2>New User</h2>
+			<div class="agileits-line"> </div>
+		</div>
+	</div>
+
+	<!-- admin login section -->
+<div class="container" style="margin-top: 100px; margin-bottom: 50px; margin-left:400px;" >
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card p-4 shadow-lg rounded">
+                <h3 class="text-center mb-4 "  style="color:#aebe27;">NEW USER</h3>
+                <form method="post" action="/NEWUSER">
+                        <div class="form-group mb-3">
+                        <label for="username" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="username" name="name" placeholder="Enter Name" required>
+                    </div>
+                        <div class="form-group mb-3">
+                        <label for="username" class="form-label">Mobile</label>
+                        <input type="text" class="form-control" id="username" name="mobile" placeholder="Enter Mobile" required>
+                    </div>
+                        <div class="form-group mb-3">
+                        <label for="username" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="username" name="email" placeholder="Enter Email" required>
+                    </div>
+                        <div class="form-group mb-3">
+                        <label for="username" class="form-label">Address</label>
+
+                           <textarea class="form-control" id="username" name="address" placeholder="Enter Address"></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+
+
+                    </div>
+						<div align="center">
+
+						 <button type="submit" class="btn btn-success">Submit</button>
+							<button type="reset" class="btn btn-success ">Reset</button>
+
+							</div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+
+			<div class="w3agile_footer_copy">
+				<p>&copy; 2025 Cloud Storage  . All rights reserved | Design by <a href="#">Cloud Storage</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+	<script type="text/javascript" src="static/assets/js/move-top.js"></script>
+	<script type="text/javascript" src="static/assets/js/easing.js"></script>
+
+  <!-- Flash Notification -->
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <script>
+                var messages = {{ messages | safe }};
+                for (var i=0; i<messages.length; i++) {
+                alert(messages[i]);
+                }
+             </script>
+            {% endif %}
+            {% endwith %}
+     <!-- Flash Notification -->
+</body>
+</html>
