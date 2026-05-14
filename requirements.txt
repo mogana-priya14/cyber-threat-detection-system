@@ -5,3 +5,4 @@ numpy
 scikit-learn
 joblib
 mysql-connector-python
+pycopg2-binary
