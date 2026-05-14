@@ -27,7 +27,7 @@ conn = psycopg2.connect(
     user=os.getenv("DB_USER"),
     password=os.getenv("DB_PASSWORD")
 )
- cur = conn.cursor()
+ cur = cconn.cursor()
             cur.execute("SELECT * FROM regtb ")
             data = cur.fetchall()
             flash("Your are Logged In...!")
