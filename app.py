@@ -20,14 +20,14 @@ def adminlogin():
 def ADMINLOGIN():
     if request.method == 'POST':
         if request.form['username'] == 'admin' and request.form['password'] == 'admin':
-            cconn = psycopg2.connect(
+conn = psycopg2.connect(
     host=os.getenv("DB_HOST"),
     port=os.getenv("DB_PORT"),
     database=os.getenv("DB_NAME"),
     user=os.getenv("DB_USER"),
     password=os.getenv("DB_PASSWORD")
 )
-            cur = conn.cursor()
+ cur = conn.cursor()
             cur.execute("SELECT * FROM regtb ")
             data = cur.fetchall()
             flash("Your are Logged In...!")
