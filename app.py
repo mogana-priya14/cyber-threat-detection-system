@@ -1,5 +1,5 @@
 from flask import Flask, render_template, flash, request, session
-
+import mysql.connector
 import psycopg2
 import os
 app = Flask(__name__)
